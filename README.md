@@ -44,8 +44,8 @@ Users should be able to:
 
 ### Continued development
 
-I have a lot to improve and learn on flexbox,grid and media queries part. From this project i realised i need to work on my responsive design skills. 
-I will make sure to refine this project later after i learn resposnive design part more.
+I have a lot to improve and learn on flexbox,grid and media queries part. I also need to work on my responsive design skills. 
+I will make sure to refine this project later after getting better at responsive part.
 
 ## Author
 
