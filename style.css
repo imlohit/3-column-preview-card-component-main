@@ -8,6 +8,7 @@
 body{
     Font-size: 15px;
     font-family: "Lexend Deca",sans-serif;
+    background-color: #f2f2f2;
 }
 /* container */
 .container{
@@ -19,27 +20,29 @@ body{
 .card{
     width: 325px;
     margin: 0 auto;
+    height: 440px;
+    padding-left: 48px;
 }
 
 .card p{
     color: hsla(0, 0%, 100%, 0.75);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     line-height: 25px;
     opacity: 0.80;
+    max-width: 230px;
 }
 .card h2{
     color: hsl(0, 0%, 95%);
     font-family: Big Shoulders Display,serif;
     font-size: 35px;
     margin-bottom: 35px;
+    font-weight: 700;
 }
 .card .icon{
     margin-bottom: 25px;
+    margin-top: 50px;
 }
 
-.container .card {
-    padding: 40px;
-}
 .attribution{
     margin-bottom: 50px;
 }
@@ -47,6 +50,7 @@ body{
 #sedans{
     background-color: hsl(31, 77%, 52%);
     border-radius: 10px 10px 0 0;
+    
 }
 #suvs{
     background-color: hsl(184, 100%, 22%);
@@ -105,3 +109,26 @@ body{
     background-color: hsl(179, 100%, 13%);
 }
 
+@media screen and (min-width: 1000px) {
+    .container{
+    display: flex;
+    width: 960px;
+    }
+    #sedans{
+        border-radius: 10px 0 0 10px;
+    }
+    #suvs{
+        background-color: hsl(184, 100%, 22%);
+    }
+    #luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-radius:  0 10px 10px 0;
+    }
+    .attribution{
+        position: absolute;
+        width: 100%;
+        margin-bottom: auto;
+    }
+    
+
+}
