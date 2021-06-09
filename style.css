@@ -23,16 +23,18 @@ body{
 
 .card p{
     color: hsla(0, 0%, 100%, 0.75);
-    margin-bottom: 80px;
-    line-height: 30px;
+    margin-bottom: 40px;
+    line-height: 25px;
     opacity: 0.80;
 }
-.card h1{
+.card h2{
     color: hsl(0, 0%, 95%);
     font-family: Big Shoulders Display,serif;
+    font-size: 35px;
+    margin-bottom: 35px;
 }
 .card .icon{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .container .card {
