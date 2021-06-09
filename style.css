@@ -1,45 +1,57 @@
-/* body */
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
     Font-size: 15px;
-    font-family: Lexend Deca,sans-serif;
+    font-family: "Lexend Deca",sans-serif;
 }
 /* container */
 .container{
-    width: 75%;
-    margin: 10vh auto;
-    border-radius: 30px;
-   
-}
-/* box */
-.box{
-    display: flex;
-    height: 65vh;
-    
+    width: 100%;
+    margin: 100px auto;
 }
 
 /* card */
-.container .card:nth-of-type(1){
-    background-color: hsl(31, 77%, 52%);
+.card{
+    width: 325px;
+    margin: 0 auto;
 }
-.container .card:nth-of-type(2){
-    background-color: hsl(184, 100%, 22%);
-}
-.container .card:nth-of-type(3){
-    background-color: hsl(179, 100%, 13%)
-}
+
 .card p{
     color: hsla(0, 0%, 100%, 0.75);
     margin-bottom: 80px;
     line-height: 30px;
+    opacity: 0.80;
 }
 .card h1{
     color: hsl(0, 0%, 95%);
     font-family: Big Shoulders Display,serif;
 }
+.card .icon{
+    margin-bottom: 20px;
+}
+
 .container .card {
     padding: 40px;
+}
+.attribution{
+    margin-bottom: 50px;
+}
+/* individual card styling */
+#sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius:  0 0 10px 10px;
 }
 
 /* buttons */
@@ -49,7 +61,6 @@ body{
     border-radius: 50px;
     outline: none;
     border: none;
-    transition: all 400ms;
 }
 .btn2{
     color: hsl(184, 100%, 22%);
@@ -57,7 +68,7 @@ body{
     border-radius: 50px;
     outline: none;
     border: none;
-    transition: all 400ms;
+   
 }
 .btn3{
     color: hsl(179, 100%, 13%);
@@ -65,7 +76,6 @@ body{
     border-radius: 50px;
     outline: none;
     border: none;
-    transition: all 400ms;
 }
 /* hover */
 .btn1:hover{
@@ -74,7 +84,7 @@ body{
     border-radius: 50px;
     outline: none;
     border: 2px solid hsl(0, 0%, 95%);
-    background-color: hsl(31, 77%, 52%);
+    background-color: transparent;
 }
 .btn2:hover{
     color: hsl(0, 0%, 95%);
@@ -93,12 +103,3 @@ body{
     background-color: hsl(179, 100%, 13%);
 }
 
-@media (max-width: 375px){
-    .box{
-        flex-direction: column;
-        
-    }
-    .attribution{
-        display: none;
-    }
-}
